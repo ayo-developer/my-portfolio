@@ -1,0 +1,408 @@
+/* =====================================================
+   RESPONSIVE.CSS
+   Premium Portfolio Responsive Styles
+===================================================== */
+
+/* ===========================
+   Large Screens (1400px+)
+=========================== */
+
+@media (min-width:1400px) {
+
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero h1 {
+        font-size: 88px;
+    }
+
+    .hero-container {
+        gap: 100px;
+    }
+
+    .section-title h2 {
+        font-size: 56px;
+    }
+
+}
+
+/* ===========================
+   Laptop
+=========================== */
+
+@media (max-width:1200px) {
+
+    .hero-container {
+        gap: 60px;
+    }
+
+    .hero h1 {
+        font-size: 62px;
+    }
+
+    .about-content {
+        gap: 50px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* ===========================
+   Tablet Landscape
+=========================== */
+
+@media (max-width:992px) {
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+    .hero-left {
+
+        order: 2;
+
+    }
+
+    .hero-right {
+
+        order: 1;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .social-icons {
+
+        justify-content: center;
+
+    }
+
+    .hero-description {
+
+        margin: auto auto 40px;
+
+    }
+
+    .about-content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .about-image {
+
+        max-width: 450px;
+
+        margin: auto;
+
+    }
+
+    .contact-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .footer-top {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .timeline::before {
+
+        left: 25px;
+
+    }
+
+    .timeline-item {
+
+        width: 100%;
+
+        left: 0 !important;
+
+        padding-left: 70px;
+
+        text-align: left !important;
+
+    }
+
+    .timeline-dot {
+
+        left: 17px !important;
+
+        right: auto !important;
+
+    }
+
+}
+
+/* ===========================
+   Tablet Portrait
+=========================== */
+
+@media (max-width:768px) {
+
+    .header {
+
+        padding: 15px 0;
+
+    }
+
+    .nav-links {
+
+        position: fixed;
+
+        top: 80px;
+
+        left: -100%;
+
+        width: 100%;
+
+        height: calc(100vh - 80px);
+
+        background: #050816;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        transition: .4s;
+
+    }
+
+    .nav-links.active {
+
+        left: 0;
+
+    }
+
+    .menu-btn {
+
+        display: block;
+
+    }
+
+    .hero {
+
+        padding-top: 120px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 48px;
+
+    }
+
+    .typing-text {
+
+        font-size: 24px;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 38px;
+
+    }
+
+    .projects-grid,
+
+    .services-grid,
+
+    .skills-grid,
+
+    .stats-grid,
+
+    .testimonials-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .hero-image {
+
+        width: 320px;
+
+        height: 320px;
+
+    }
+
+    .project-card img {
+
+        height: 220px;
+
+    }
+
+    .about-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:576px) {
+
+    .container {
+
+        width: 92%;
+
+    }
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+    .typing-text {
+
+        font-size: 22px;
+
+    }
+
+    .hero-description {
+
+        font-size: 16px;
+
+    }
+
+    .hero-image {
+
+        width: 280px;
+
+        height: 280px;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 34px;
+
+    }
+
+    .btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .project-links {
+
+        flex-direction: column;
+
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .contact-item {
+
+        align-items: flex-start;
+
+    }
+
+    #backToTop {
+
+        right: 18px;
+
+        bottom: 18px;
+
+    }
+
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media (max-width:400px) {
+
+    .hero h1 {
+
+        font-size: 34px;
+
+    }
+
+    .typing-text {
+
+        font-size: 18px;
+
+    }
+
+    .hero-image {
+
+        width: 240px;
+
+        height: 240px;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 28px;
+
+    }
+
+    .service-card,
+
+    .skill-card,
+
+    .project-card,
+
+    .testimonial-card {
+
+        padding: 24px;
+
+    }
+
+}
+
+/* ===========================
+   Landscape Phones
+=========================== */
+
+@media (max-height:500px) {
+
+    .hero {
+
+        min-height: auto;
+
+        padding: 120px 0 80px;
+
+    }
+
+}
